@@ -1,2 +1,0 @@
-# fortuneX
-flask page
