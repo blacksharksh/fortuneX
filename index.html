@@ -1,0 +1,292 @@
+{% extends "base.html" %}
+{% block title %} FortuneX {% endblock %}
+{% block body %}
+
+<!--style-->
+<style>
+    /*init*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        background: black;
+        scroll-behavior: smooth;
+        color: white;
+        list-style: none;
+        text-decoration: none;
+        cursor: default;
+    }
+    /*section main*/
+    .main{
+        height: 600px;
+        width: 1250px;
+        background: black;
+        margin: 0 auto;
+        padding: 0px 20px;
+        position: relative;
+    }
+    /*main container*/
+    .container-main{
+        background-color: black;
+        height: 550px;
+        width: 100%;
+        padding: 40px 40px 40px 40px;
+        margin: 0px auto;
+        position: absolute;
+    }
+    /*navbar*/
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        width: 100%;
+        background-color: transparent;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        width: 176px;
+    }
+    .nav, ul, li{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 30px;
+    }
+    .container-child{
+        height: 450px;
+        width: 1125px;
+        margin: 0px auto;
+        background-color: black;
+        position: absolute;
+    }
+    .child-left{
+        background-color: black;
+        height: 450px;
+        width: 450px;
+        position: relative;
+
+
+    }
+    .main-left-text{
+        height: 100%;
+        width: 450px;
+        position: absolute;
+        background-color: black;
+        top: 0px;
+    }
+    .L-text{
+        position: relative;
+        top: 100px;
+        font-size: 30px;
+        background-color: black;
+        height: 68px;
+        width: 250px;
+    }
+    .L-text h1{
+        background-color: black;
+        color: rgba(225,0,0,100%);
+    }
+    .L-img{
+        height: 68px;
+        width: 57px;
+        position: absolute;
+        top: 90px;
+        right: 150px;
+    }
+    .content-l{
+        position: absolute;
+        top: 180px;
+    }
+    .content-l-offer{
+        position: absolute;
+        top: 260px;
+        right: 270px;
+    }
+    .content-l-button button{
+        position: absolute;
+        top: 320px;
+        right: 210px;
+        background-color: rgba(225,0,0,100%);
+        height: 60px;
+        width: 220px;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 30px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    /* left container end*/
+
+    /*right side start*/
+    .rightside{
+        height: 490px;
+        width: 808px;
+        background-color: black;
+        position: absolute;
+        right: -115px;
+        top: 0px;
+    }
+    .rightside img{
+        position: relative;
+    }
+    /*section main end*/
+
+    /*section 2 sec2-location*/
+    .sec2-location{
+        background: black;
+        height: 600px;
+        width: 1250px;
+        margin: 0px auto;
+        position: relative;
+    }
+    .sec2-head h1{
+        height: 80px;
+        width: 400px;
+        color: red;
+        top: 20px;
+        padding: 10px 50px;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0px auto;
+        align-items: center;
+    }
+    .sec2-head h4{
+        height: 20px;
+        width: 350px;
+        margin: 0px auto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 0px 45px;
+    }
+    .locateme{
+        padding: 15px;
+        cursor: default;
+    }
+    .locateme form{
+        display: flex;
+        justify-content: center;
+    }
+    .locateme form input{
+        height: 65px;
+        width: 500px;
+        background-color: rgba(14,11,11,100%);
+        border: none;
+        outline: none;
+        border-radius: 30px 0px 0px 30px;
+        padding: 20px 40px;
+        color: red;
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .locateme form button{
+        height: 65px;
+        width: 135px;
+        background: red;
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 0px 30px 30px 0px;
+        cursor: pointer;
+    }
+    .locateme form button img{
+        background: red;
+        color: white;
+        cursor: pointer;
+    }
+
+
+</style>
+
+
+<!--style end-->
+
+<!--html body-->
+<section class="main">
+    <!--main container/ body-->
+    <div class="container-main">
+        <!--navbar-->
+        <div class="navbar">
+            <!--logo-->
+            <div class="logo">
+                <a href="#index.html">
+                    <img src="/static/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <!--logo end-->
+            <!--left side nav icon-->
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="/static/images/shopping cart icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/static/images/menu icon.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!--left nav icon end-->
+        </div>
+        <!--navbar end-->
+        <!--left container's start-->
+        <div class="container-child">
+            <div class="child-left">
+                <div class="main-left-text">
+                    <div class="L-text">
+                        <h1>FortuneX</h1>
+                    </div>
+                    <div class="L-img">
+                        <img src="/static/images/Union-m.png" alt="">
+                    </div>
+                    <div class="content-l">
+                        <h2>Eat Fresh and Delicious Food's</h2>
+                        <h3>India, Japanese, French, more </h3>
+                    </div>
+                    <div class="content-l-offer">
+                        <h2>20% OFF</h2>
+                    </div>
+                    <div class="content-l-button">
+                        <a href="#">
+                            <button onclick="Order()" id="orderButton">Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <!--left container's end-->
+                <!--right side open start-->
+            <div class="rightside">
+                <img src="/static/images/mearged.png" alts=""> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sec2-location">
+    <div class="sec2-head">
+        <h1>Your Location</h1>
+        <h4>Help us find the beat way to reach till you</h4>
+    </div>
+    <div class="locateme">
+        <form>
+            <input type="text" name="locate" placeholder="Locate me">
+            <button type="button" onclick="locateme()" id="locate">
+                <img src="/static/images/LOCATEBUTTON.png" alt="">
+            </button>
+        </form>
+    </div>
+</section>
+
+<!--html body end-->
+
+<!--javascript-->
+
+<!--javascript end-->
+
+
+{% endblock %}
